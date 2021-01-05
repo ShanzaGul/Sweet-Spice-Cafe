@@ -1,38 +1,257 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+
+*{
+  margin:0;
+  font-family: 'Dancing Script', cursive;
+}
+
+.header{
+  background-color: honeydew;
+}
+
+
+.button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5%;
+  box-shadow: 2px 2px #888888, -2px -2px #888888;
+  font-size: 16px; 
+}
+/* --------------------------------------HERO IMAGE----------------------------- */
+.inner{
+  background-image: url('images/hero.jpg');
+  height: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+
+.button:hover,.button:active{
+  background-color: white;
+  color:#000;
+  transition: background-color 0.3 ease-in, color 0.3 ease-in;
+  
+}
+
+.heading{
+  margin: 30px;
+  background-color: honeydew;
+  opacity: 0.4;
+}
+
+h1{
+ font-size: 70px;
+  color: #000;
+}
+
+
+a:hover,a:active{
+text-decoration:  none !important;
+}
+
+.jumbotron{
+  margin-bottom: 0px !important ;
+}
+
+/* --------------------------------------MENU SECTION CSS----------------------------- */
+
+.sectionMenu{
+  background-color:transparent;
+}
+
+.imgDiv{
+  height: 300px;
+  overflow: hidden;
+}
+
+.imgMenu{
+ width: 100%;
+ margin-top: 70px;
+ transition: margin-top 0.5s;
+}
+
+.menuColDiv{
+  padding-top: 5%;
+}
+
+.imgMenu{transition-timing-function: ease-out;}
+
+.imgMenu:hover{
+  margin-top: 40px;
+  border-radius:50%;
+  box-shadow: 2px -9px 14px -9px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 2px -9px 14px -9px rgba(0,0,0,0.3);
+  -moz-box-shadow: 2px -9px 14px -9px rgba(0,0,0,0.3);
+  }
+
+.menu-nav__heading{
+    text-decoration: none;
+    color: #ced8cf;
+    text-align: center;
+    font-size: 50px
+}
+
+
+/* --------------------------------------OURSTORY CSS----------------------------- */
+
+
+
+.ourStory{
+background-color: #91bdaa;
+padding-top: 10%;
+padding-bottom: 10%;
+}
+
+
+.imgCon{
+  background-image: url('images/ourStory2.png');
+  height: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+/* --------------------------------------CAROUSEL CSS----------------------------- */
+.carousel{
+  height: 500px;
+  width: 100%;
+  background-color: honeydew;
+  padding-top: 5%;
+}
+.carouselBox{
+  height: 300px;
+  width: 100%;
+}
+.imgcarousel{
+  height: 100%;
+  width: 30%;
+  margin-left: 10%;
+  border-radius: 70%;
+
+}
+
+.captioncarousel{
+  height: 100%;
+  width: auto;
+  padding: 2%;
+  margin-right: 10%;
+}
+
+.cap{
+  padding-top: 4%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+@media only screen and (max-width: 600px) {
+  .imgcarousel{
+    height: 100%;
+    width: 40%;
+    border-radius: 70%;
+    margin-left: 2px;
+  }
+  .captioncarousel{
+    height: 100%;
+    width: auto;
+    padding: 5%;
+    margin-right: 2px;
+
+  }
+
+
+}
+
+
+/*----------------------------------- FOOOTER CSS------------------------------------ */
+
+.footerCon{
+  padding: 10%;
+  background-color: khaki;
+}
+
+.footer a {
+  color: #62a086 !important;
+}
+
+.footer a:hover {
+  color: #83d3b2 !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer{
+    margin:7%;
+  }
+}
+
+/*----------------------------------- MENUTab CSS------------------------------------ */
+.nav-tabs .nav-link{
+  color:rgb(205,197,123) !important ;
+}
+
+.card-img.card-img, .card-img-bottom, .card-img-top {
+  flex-shrink: 0 !important;
+  width: 300px !important;
+}
+
+.divFoodCard{
+  display:flex;
+  flex-direction:row;
+}
+
+.bodyFoodCard{
+  width: 100%;
+}
+
+.btnAdd{
+  border: none;
+  background-color: inherit;
+ 
+}
+.btnMinus{
+  border: none;
+  background-color: inherit;
+ 
+}
+@media only screen and (max-width: 600px) {
+  .card-img, .card-img-bottom, .card-img-top{
+    width: 100% !important;
+  }
+
+  .divFoodCard{
+    display:flex;
+    flex-direction:column;
+  }
+}
+
+
+.modal-content{
+  text-align: center;
+}
+.modal-title{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*----------------------------------- menu cards b/l/s------------------------------------ */
+
+.aboutcaption{
+  width: 20rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-group input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid green;
 }
